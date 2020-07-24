@@ -29,14 +29,6 @@ namespace BracketsApp
             PlayersPerBracket = TourneySize * 2; // 2 players per game
         }
 
-        public List<BracketGame> GetAllWinners()
-        {
-            List<BracketGame> winners = new List<BracketGame>();
-
-            Brackets.ForEach( b => winners.Add( b.GetWinners() ));
-
-            return winners;
-        }
 
         public void AddEntry(BracketPlayer player)
         {
@@ -153,14 +145,6 @@ namespace BracketsApp
             
         }
 
-        public void PrintAllGames()
-        {
-            foreach (var item in Brackets)
-            {
-                item.PrintGame();
-                Console.WriteLine();
-            }
-        }
         
         private bool GenerateBrackets(List<BracketGame> games)
         {
