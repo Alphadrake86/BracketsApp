@@ -47,10 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bracket.cs" />
-    <Compile Include="BracketGame.cs" />
-    <Compile Include="BracketPlayer.cs" />
-    <Compile Include="BracketsTourney.cs" />
+    <Compile Include="Brackets Classes\Bracket.cs" />
+    <Compile Include="Brackets Classes\BracketGame.cs" />
+    <Compile Include="Brackets Classes\BracketPlayer.cs" />
+    <Compile Include="Brackets Classes\BracketsTourney.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +101,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\largeTourney.txt" />
+    <Content Include="Resources\tournament.txt" />
+    <Content Include="Resources\wideTourney.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
